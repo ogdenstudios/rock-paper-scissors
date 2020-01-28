@@ -1,15 +1,48 @@
-<h1>Rock Paper Scissors</h1>
-<h2>Who won?</h2>
-<%= form_with(url: "/rock_wins", method: "POST") do %>
-  <%= submit_tag("Rock") %>
-<% end %>
-<%= form_with(url: "/paper_wins", method: "POST") do %>
-  <%= submit_tag("Paper") %>
-<% end %>
-<%= form_with(url: "/scissors_wins", method: "POST") do %>
-  <%= submit_tag("Scissors") %>
-<% end %>
-<h3>Global results</h3>
-<%= @results_tracker.rock_wins.to_s %>
-<%= @results_tracker.paper_wins.to_s %>
-<%= @results_tracker.scissors_wins.to_s %>
+<div class="row mb-3">
+  <div class="col">
+    <h1>Rock Paper Scissors</h1>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col">
+    <h2>Who won?</h2>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-sm-4">
+    <%= form_with(url: "/rock_wins", method: "POST") do %>
+      <%= submit_tag("Rock") %>
+    <% end %>
+  </div>
+  <div class="col-sm-4">
+    <%= form_with(url: "/paper_wins", method: "POST") do %>
+      <%= submit_tag("Paper") %>
+    <% end %>
+  </div>
+  <div class="col-sm-4">
+    <%= form_with(url: "/scissors_wins", method: "POST") do %>
+      <%= submit_tag("Scissors") %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col">
+    <h3>Global results</h3>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-sm-4">
+    <%= @results_tracker.rock_wins.to_s %>
+  </div>
+  <div class="col-sm-4">
+    <%= @results_tracker.paper_wins.to_s %>
+  </div>
+  <div class="col-sm-4">
+    <%= @results_tracker.scissors_wins.to_s %>
+  </div>
+</div>
+
