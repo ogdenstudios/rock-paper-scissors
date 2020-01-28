@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rock_wins: 1
+  paper_wins: 1
+  scissors_wins: 1
+
+two:
+  rock_wins: 1
+  paper_wins: 1
+  scissors_wins: 1

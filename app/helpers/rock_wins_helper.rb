@@ -1,0 +1,2 @@
+module RockWinsHelper
+end
